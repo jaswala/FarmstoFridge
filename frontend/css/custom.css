@@ -4,18 +4,14 @@ body {
   padding-bottom: 20px;
   color:white;
 }
-
+ ul.nav {
+     font-family: 'Montserrat', sans-serif;
+     font-size:16px;
+ }
 
 .site-wrapper {
     text-align: center;
-}
-
-.masthead clearfix {
-    text-align: center;
-}
-
-.inner cover {
-    text-align: center;
+    background-image: url(../images/farmPic.jpg);
 }
 
 .btn-lg {
@@ -24,8 +20,14 @@ body {
 
 .cover-heading {
     color:white;
+    margin-bottom:50px;
 }
 
 .lead {
     color:black;
+    border: 1px solid;
+    background-color: whitesmoke;
+    opacity: .8;
 }
+
+ 
