@@ -1,4 +1,28 @@
-[{
+<!DOCTYPE html>
+<html ng-app="myApp">
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.0/angular.min.js"></script>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Farm to Fridge</title>
+  <script>
+    angular.module('myApp', []).controller('namedController', functionController);
+    
+    function functionController($scope) {
+      $scope.farms = <!DOCTYPE html>
+<html ng-app="myApp">
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.0/angular.min.js"></script>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Farm to Fridge</title>
+  <script>
+    angular.module('myApp', []).controller('namedController', functionController);
+    
+    function functionController($scope) {
+      $scope.farms = [{
   "name": "Acme Farm",
   "description": "Acme Farm raises grass-fed, antibiotic-, chemical-, and grain-free lamb. We follow organic practices on our farm. Our uncommon sheep are a hardy, ancient breed, considered to be a genetic resource for now and the future. They are a small, hardy, hair sheep breed that carries their fat around their internal organs, which means a low-fat, fine textured and mild flavored meat.  All processing is USDA inspected. We usually have ground lamb, chops, legs-of-lamb, shanks, and two types of sausage, spicy Italian and breakfast, available. You may special order whole lamb or other cuts or varietal portions to be reserved at the next harvest.             Contact Nancy by phone or e-mail to arrange for farm  sales. Our lamb is also available at Everybody's Store (http://www.everybodys.com) in Van Zandt, and Farmer Ben™s (http://www.myfarmerben.com) between Everson and  Lynden,  all in Whatcom County, WA.          Acme Farm, Nancy Hibbing, 5808 Saxon Road, Acme WA (https://www.google.com/maps?q=5808+Saxon+Road,+Acme+WA+9822&hl=en&ll=47.820532,-122.085571&spn=2.452748,5.300903&sll=37.0625,-95.677068&sspn=46.005754,84.814453&hnear=5808+Saxon+Rd,+Acme,+Whatcom,+Washington+98220&t=m&z=8) 98220. (360) 722-1322.        E-mail: acmefarm@msn.com",
   "products": ["Lamb"],
@@ -952,3 +976,47 @@
     "coordinates": [119.85654000000001, 47.08112, 0.0]
   }
 }]
+      $scope.arrayToString = function(string){
+        return string.join(", ");
+    };
+    }
+  </script>
+</head>
+<body>
+  <b>Product Search:</b> <input type="text" ng-model="search.products">
+  <p><b>Free text search:</b><input type="text" ng-model="search.$"></p>
+  <div ng-controller="namedController">
+
+    <ul>
+      <li ng-repeat="farm in farms | filter: search">
+        <a ng-href="{{farm.website}}">{{farm.name}}</a> located in 
+          {{farm.location.city}}, {{farm.location.state}} serving 
+        {{arrayToString(farm.products)}} 
+       
+  </div>
+  
+
+</body>
+</html>
+      $scope.arrayToString = function(string){
+        return string.join(", ");
+    };
+    }
+  </script>
+</head>
+<body>
+  <b>Product Search:</b> <input type="text" ng-model="search.products">
+  <p><b>Free text search:</b><input type="text" ng-model="search.$"></p>
+  <div ng-controller="namedController">
+
+    <ul>
+      <li ng-repeat="farm in farms | filter: search">
+        <a ng-href="{{farm.website}}">{{farm.name}}</a> located in 
+          {{farm.location.city}}, {{farm.location.state}} serving 
+        {{arrayToString(farm.products)}} 
+       
+  </div>
+  
+
+</body>
+</html>
