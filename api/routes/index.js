@@ -7,4 +7,9 @@ router
     .route('/farms')
     .get(ctrlFarms.farmsGetAll);
 
+router
+    .route('/farms/:farmID')
+    .get(ctrlFarms.farmsGetOne);
+
+
 module.exports = router;

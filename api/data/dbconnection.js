@@ -1,5 +1,5 @@
 var MongoClient = require('mongodb').MongoClient;
-var dburl = 'mongodb://localhost:27017/farms';
+var dburl = 'mongodb://test:test@ds025583.mlab.com:25583/nodetodosample-aj';
 
 
 var _connection = null;
