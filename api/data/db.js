@@ -1,5 +1,6 @@
 var mongoose = require('mongoose');
 var dburl = 'mongodb://test:test@ds025583.mlab.com:25583/nodetodosample-aj';
+//var dburl= 'mongodb://127.0.0.1:27017/meantest';
 
 mongoose.connect(dburl);
 
