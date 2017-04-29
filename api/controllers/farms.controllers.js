@@ -1,13 +1,7 @@
 var mongoose = require('mongoose');
 var Farm = require('../data/farms.model.js');
 
-//var dbconn = require('../data/dbconnection.js');
-//var ObjectId = require('mongodb').ObjectId;
-//var farmsData = require('../data/farms-data.json');
-
 module.exports.farmsGetAll = function (req, res) {
-   // var db = dbconn.get();
-   // var collection = db.collection('FarmJson');
 
 // to limit the results 
     var offset = 0;
