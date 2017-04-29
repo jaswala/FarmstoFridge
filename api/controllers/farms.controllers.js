@@ -1,4 +1,5 @@
-var mongoose = require('mongoose');
+//var mongoose = require('mongoose');
+
 var Farm = require('../data/farms.model.js');
 
 module.exports.farmsGetAll = function (req, res) {
